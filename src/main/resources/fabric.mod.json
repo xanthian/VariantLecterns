@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "variantfletchingtables",
+  "id": "variantlecterns",
   "version": "${version}",
-  "name": "Variant Fletching Tables",
-  "description": "Fletching Tables for all wood types",
+  "name": "Variant Lecterns",
+  "description": "Lecterns for all wood types",
   "authors": ["Xanthian"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.variantfletchingtables.Initialise"],
-    "fabric-datagen": ["net.xanthian.variantfletchingtables.DataGenerator"]
+    "main": ["net.xanthian.variantlecterns.Initialise"],
+    "fabric-datagen": ["net.xanthian.variantlecterns.DataGenerator"]
   },
-  "mixins": ["variantfletchingtables.mixins.json"],
-  "accessWidener": "variantfletchingtables.accesswidener",
+  "mixins": ["variantlecterns.mixins.json"],
+  "accessWidener": "variantlecterns.accesswidener",
   "depends": {
-    "fabricloader": ">=0.14.19",
+    "fabricloader": ">=0.14.20",
     "fabric": "*",
     "minecraft": "1.20.x",
     "java": ">=17"

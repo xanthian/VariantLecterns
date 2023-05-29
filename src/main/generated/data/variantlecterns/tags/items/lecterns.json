@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "variantlecterns:acacia_lectern",
+    "variantlecterns:bamboo_lectern",
+    "variantlecterns:birch_lectern",
+    "variantlecterns:cherry_lectern",
+    "variantlecterns:crimson_lectern",
+    "variantlecterns:dark_oak_lectern",
+    "variantlecterns:jungle_lectern",
+    "variantlecterns:mangrove_lectern",
+    "variantlecterns:spruce_lectern",
+    "variantlecterns:warped_lectern"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.xanthian.variantlecterns.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PointOfInterestTypesAccessor",
+    "BlockEntityTypeMixin",
+    "WritableBookItemMixin",
+    "WrittenBookItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
