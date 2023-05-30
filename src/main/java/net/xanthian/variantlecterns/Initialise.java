@@ -46,6 +46,8 @@ public class Initialise implements ModInitializer {
 
         // Lectern Registration
         Lecterns.registerVanillaLecterns();
+
+        // Fuel & Flammable Block registration
         ModRegistries.registerFuelandFlammable();
 
         // Cleric POI Registration

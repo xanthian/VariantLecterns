@@ -2,6 +2,8 @@ package net.xanthian.variantlecterns.utils;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.block.FireBlock;
+import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.xanthian.variantlecterns.block.Lecterns;
 
 public class ModRegistries {
@@ -14,7 +16,10 @@ public class ModRegistries {
     private static void registerFlammableBlocks() {
         FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
 
-        // Copy of Blocks.LECTERN from net.minecraft.block.FireBlock.registerDefaultFlammables
+/**
+         Copy from {@link FireBlock#registerDefaultFlammables()}
+ **/
+
         registry.add(Lecterns.ACACIA_LECTERN, 30, 20);
         registry.add(Lecterns.BAMBOO_LECTERN, 30, 20);
         registry.add(Lecterns.BIRCH_LECTERN, 30, 20);
@@ -28,7 +33,10 @@ public class ModRegistries {
     private static void registerFuel() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        // Copy of Blocks.LECTERN from net.minecraft.block.entity.AbstractFurnaceBlockEntity.createFuelTimeMap
+/**
+        Copy from {@link AbstractFurnaceBlockEntity#createFuelTimeMap()}
+ **/
+
         registry.add(Lecterns.ACACIA_LECTERN, 300);
         registry.add(Lecterns.BAMBOO_LECTERN, 300);
         registry.add(Lecterns.BIRCH_LECTERN, 300);
