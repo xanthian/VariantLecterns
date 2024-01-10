@@ -13,7 +13,7 @@
           "condition": "fabric:registry_contains",
           "registry": "minecraft:block",
           "values": [
-            "botania:livingwood_slab"
+            "botania:livingwood_planks_slab"
           ]
         },
         {
@@ -35,7 +35,7 @@
       "item": "minecraft:bookshelf"
     },
     "S": {
-      "item": "botania:livingwood_slab"
+      "item": "botania:livingwood_planks_slab"
     }
   },
   "pattern": [
