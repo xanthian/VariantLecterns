@@ -1,15 +1,369 @@
 {
   "replace": false,
   "values": [
-    "variantlecterns:acacia_lectern",
-    "variantlecterns:bamboo_lectern",
-    "variantlecterns:birch_lectern",
-    "variantlecterns:cherry_lectern",
-    "variantlecterns:crimson_lectern",
-    "variantlecterns:dark_oak_lectern",
-    "variantlecterns:jungle_lectern",
-    "variantlecterns:mangrove_lectern",
-    "variantlecterns:spruce_lectern",
-    "variantlecterns:warped_lectern"
+    {
+      "id": "variantlecterns:birch_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:jungle_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:crimson_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:mangrove_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:dark_oak_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:spruce_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:acacia_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:warped_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bamboo_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:cherry_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:aa_aeronos_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:aa_glacian_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:aa_strophar_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ldbp_palm_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ba_rotten_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bw_dragons_blood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bw_cypress_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bw_elder_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bw_juniper_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bm_willow_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bm_ancient_oak_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bm_blighted_balsa_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bm_swamp_cypress_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bls_charred_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bls_raw_bamboo_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bls_white_oak_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bot_dreamwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bot_livingwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:bot_shimmerwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:cs_scorched_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:cs_umbral_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:dad_echo_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ds_charred_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ee_primordial_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:mc_putrid_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_olive_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_redwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_maple_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_aspen_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_joshua_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_sugi_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_willow_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_cypress_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_fir_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ns_wisteria_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:prom_palm_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:prom_maple_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:prom_dark_amaranth_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:prom_sakura_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_alpha_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_purple_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_maple_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_light_blue_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_cyan_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_socotra_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_pine_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_red_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_light_gray_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_green_bioshroom_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_brimwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_dead_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_pink_bioshroom_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_baobab_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_willow_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_yellow_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_blackwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_joshua_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_magenta_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_mauve_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_eucalyptus_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_green_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_gray_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_blue_bioshroom_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_pink_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_larch_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_redwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_white_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_brown_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_orange_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_magnolia_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_kapok_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_palm_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_black_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_cobalt_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_cypress_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_yellow_bioshroom_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_blue_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_lime_painted_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:sp_stone_pine_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:tr_rubber_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ldv_cherry_lectern",
+      "required": false
+    }
   ]
 }

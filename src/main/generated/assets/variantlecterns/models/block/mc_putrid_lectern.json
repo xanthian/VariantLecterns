@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/mc_putrid_lectern_base",
+    "bottom": "minecells:block/putrid_planks",
+    "front": "variantlecterns:block/mc_putrid_lectern_front",
+    "particle": "variantlecterns:block/mc_putrid_lectern_sides",
+    "sides": "variantlecterns:block/mc_putrid_lectern_sides",
+    "top": "variantlecterns:block/mc_putrid_lectern_top"
+  }
+}

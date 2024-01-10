@@ -1,56 +1,70 @@
 package net.xanthian.variantlecterns;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
-
-import net.xanthian.variantlecterns.block.Lecterns;
-import net.xanthian.variantlecterns.utils.ModRegistries;
+import net.fabricmc.loader.api.FabricLoader;
+import net.xanthian.variantlecterns.block.Vanilla;
+import net.xanthian.variantlecterns.block.compatability.*;
+import net.xanthian.variantlecterns.utils.ModCreativeTab;
 import net.xanthian.variantlecterns.utils.ModPOITypes;
+import net.xanthian.variantlecterns.utils.ModRegistries;
 
 public class Initialise implements ModInitializer {
 
     public static final String MOD_ID = "variantlecterns";
 
-    public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, "variantlecterns"));
+    public static void ifModLoaded(String modId, Runnable runnable) {
+        if (FabricLoader.getInstance().isModLoaded(modId)) {
+            runnable.run();
+        }
+    }
 
     @Override
     public void onInitialize() {
-        // Custom Item Group
-        Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
-                .displayName(Text.translatable("variantlecterns.group.variantlecterns"))
-                .icon(() -> new ItemStack(Lecterns.MANGROVE_LECTERN))
-                .entries((context, entries) -> {
-                    entries.add(Lecterns.ACACIA_LECTERN);
-                    entries.add(Lecterns.BAMBOO_LECTERN);
-                    entries.add(Lecterns.BIRCH_LECTERN);
-                    entries.add(Lecterns.CHERRY_LECTERN);
-                    entries.add(Lecterns.CRIMSON_LECTERN);
-                    entries.add(Lecterns.DARK_OAK_LECTERN);
-                    entries.add(Lecterns.JUNGLE_LECTERN);
-                    entries.add(Lecterns.MANGROVE_LECTERN);
-                    entries.add(Blocks.LECTERN); // Oak
-                    entries.add(Lecterns.SPRUCE_LECTERN);
-                    entries.add(Lecterns.WARPED_LECTERN);
-                })
-                .build());
 
-        // Lectern Registration
-        Lecterns.registerVanillaLecterns();
+        Vanilla.registerVanillaLecterns();
 
-        // Fuel & Flammable Block registration
+        ifModLoaded("ad_astra", AdAstra::registerLecterns);
+
+        ifModLoaded("beachparty", BeachParty::registerLecterns);
+
+        ifModLoaded("betterarcheology", BetterArcheology::registerLecterns);
+
+        ifModLoaded("bewitchment", Bewitchment::registerLecterns);
+
+        ifModLoaded("biomemakeover", BiomeMakeover::registerLecterns);
+
+        ifModLoaded("blockus", Blockus::registerLecterns);
+
+        ifModLoaded("botania", Botania::registerLecterns);
+
+        ifModLoaded("cinderscapes", Cinderscapes::registerLecterns);
+
+        ifModLoaded("deeperdarker", DeeperAndDarker::registerLecterns);
+
+        ifModLoaded("desolation", Desolation::registerLecterns);
+
+        ifModLoaded("eldritch_end", EldritchEnd::registerLecterns);
+
+        ifModLoaded("minecells", MineCells::registerLecterns);
+
+        ifModLoaded("natures_spirit", NaturesSpirit::registerLecterns);
+
+        ifModLoaded("promenade", Promenade::registerLecterns);
+
+        ifModLoaded("regions_unexplored", RegionsUnexplored::registerLecterns);
+
+        ifModLoaded("snifferplus", SnifferPlus::registerLecterns);
+
+        ifModLoaded("techreborn", TechReborn::registerLecterns);
+
+        ifModLoaded("vinery", Vinery::registerLecterns);
+
         ModRegistries.registerFuelandFlammable();
-
-        // Cleric POI Registration
+        ModCreativeTab.registerItemGroup();
         ModPOITypes.init();
+
+        //Datagen Block - disable for client run
+        SnifferPlus.registerLecterns();
+        Botania.registerLecterns();
     }
 }

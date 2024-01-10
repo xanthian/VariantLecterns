@@ -1,0 +1,50 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:and",
+      "values": [
+        {
+          "condition": "fabric:all_mods_loaded",
+          "values": [
+            "botania"
+          ]
+        },
+        {
+          "condition": "fabric:registry_contains",
+          "registry": "minecraft:block",
+          "values": [
+            "botania:dreamwood_slab"
+          ]
+        },
+        {
+          "condition": "fabric:not",
+          "value": {
+            "condition": "fabric:all_mods_loaded",
+            "values": [
+              "variantbookshelves"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": {
+      "item": "minecraft:bookshelf"
+    },
+    "S": {
+      "item": "botania:dreamwood_slab"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " B ",
+    " S "
+  ],
+  "result": {
+    "item": "variantlecterns:bot_dreamwood_lectern"
+  },
+  "show_notification": true
+}

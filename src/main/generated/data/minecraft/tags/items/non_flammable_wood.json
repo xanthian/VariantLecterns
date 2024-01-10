@@ -2,6 +2,26 @@
   "replace": false,
   "values": [
     "variantlecterns:crimson_lectern",
-    "variantlecterns:warped_lectern"
+    "variantlecterns:warped_lectern",
+    {
+      "id": "variantlecterns:prom_dark_amaranth_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_brimwood_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_cobalt_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_dead_lectern",
+      "required": false
+    },
+    {
+      "id": "variantlecterns:ru_yellow_bioshroom_lectern",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/ldbp_palm_lectern_base",
+    "bottom": "beachparty:block/palm_planks0",
+    "front": "variantlecterns:block/ldbp_palm_lectern_front",
+    "particle": "variantlecterns:block/ldbp_palm_lectern_sides",
+    "sides": "variantlecterns:block/ldbp_palm_lectern_sides",
+    "top": "variantlecterns:block/ldbp_palm_lectern_top"
+  }
+}

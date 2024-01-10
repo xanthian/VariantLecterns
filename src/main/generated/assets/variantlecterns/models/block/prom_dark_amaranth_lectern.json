@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/prom_dark_amaranth_lectern_base",
+    "bottom": "promenade:block/dark_amaranth/planks",
+    "front": "variantlecterns:block/prom_dark_amaranth_lectern_front",
+    "particle": "variantlecterns:block/prom_dark_amaranth_lectern_sides",
+    "sides": "variantlecterns:block/prom_dark_amaranth_lectern_sides",
+    "top": "variantlecterns:block/prom_dark_amaranth_lectern_top"
+  }
+}

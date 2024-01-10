@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "variantlecterns:block/bm_blighted_balsa_lectern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "variantlecterns:block/bm_blighted_balsa_lectern"
+    },
+    "facing=south": {
+      "model": "variantlecterns:block/bm_blighted_balsa_lectern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "variantlecterns:block/bm_blighted_balsa_lectern",
+      "y": 270
+    }
+  }
+}

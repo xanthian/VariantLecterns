@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/ba_rotten_lectern_base",
+    "bottom": "betterarcheology:block/rotten_planks",
+    "front": "variantlecterns:block/ba_rotten_lectern_front",
+    "particle": "variantlecterns:block/ba_rotten_lectern_sides",
+    "sides": "variantlecterns:block/ba_rotten_lectern_sides",
+    "top": "variantlecterns:block/ba_rotten_lectern_top"
+  }
+}

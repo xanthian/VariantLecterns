@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/birch_lectern_base",
+    "bottom": "minecraft:block/birch_planks",
+    "front": "variantlecterns:block/birch_lectern_front",
+    "particle": "variantlecterns:block/birch_lectern_sides",
+    "sides": "variantlecterns:block/birch_lectern_sides",
+    "top": "variantlecterns:block/birch_lectern_top"
+  }
+}

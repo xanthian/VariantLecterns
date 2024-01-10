@@ -2,9 +2,7 @@ package net.xanthian.variantlecterns.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
-
 import net.xanthian.variantlecterns.block.VariantLecternBlock;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

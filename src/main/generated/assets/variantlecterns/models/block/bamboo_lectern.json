@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bamboo_lectern_base",
+    "bottom": "minecraft:block/bamboo_planks",
+    "front": "variantlecterns:block/bamboo_lectern_front",
+    "particle": "variantlecterns:block/bamboo_lectern_sides",
+    "sides": "variantlecterns:block/bamboo_lectern_sides",
+    "top": "variantlecterns:block/bamboo_lectern_top"
+  }
+}

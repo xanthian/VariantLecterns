@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/acacia_lectern_base",
+    "bottom": "minecraft:block/acacia_planks",
+    "front": "variantlecterns:block/acacia_lectern_front",
+    "particle": "variantlecterns:block/acacia_lectern_sides",
+    "sides": "variantlecterns:block/acacia_lectern_sides",
+    "top": "variantlecterns:block/acacia_lectern_top"
+  }
+}

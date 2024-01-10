@@ -1,4 +1,15 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:all_mods_loaded",
+        "values": [
+          "variantbookshelves"
+        ]
+      }
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_book": {
@@ -15,7 +26,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cherry_lectern"
+        "recipe": "variantlecterns:cherry_lectern"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +39,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cherry_lectern"
+      "variantlecterns:cherry_lectern"
     ]
   },
   "sends_telemetry_event": false

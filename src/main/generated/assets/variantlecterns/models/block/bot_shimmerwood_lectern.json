@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bot_shimmerwood_lectern_base",
+    "bottom": "botania:block/shimmerwood_planks",
+    "front": "variantlecterns:block/bot_shimmerwood_lectern_front",
+    "particle": "variantlecterns:block/bot_shimmerwood_lectern_sides",
+    "sides": "variantlecterns:block/bot_shimmerwood_lectern_sides",
+    "top": "variantlecterns:block/bot_shimmerwood_lectern_top"
+  }
+}

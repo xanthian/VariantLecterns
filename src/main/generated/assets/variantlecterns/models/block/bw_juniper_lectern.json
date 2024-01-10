@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bw_juniper_lectern_base",
+    "bottom": "bewitchment:block/juniper_planks",
+    "front": "variantlecterns:block/bw_juniper_lectern_front",
+    "particle": "variantlecterns:block/bw_juniper_lectern_sides",
+    "sides": "variantlecterns:block/bw_juniper_lectern_sides",
+    "top": "variantlecterns:block/bw_juniper_lectern_top"
+  }
+}

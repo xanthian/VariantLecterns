@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "variantlecterns:block/bw_juniper_lectern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "variantlecterns:block/bw_juniper_lectern"
+    },
+    "facing=south": {
+      "model": "variantlecterns:block/bw_juniper_lectern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "variantlecterns:block/bw_juniper_lectern",
+      "y": 270
+    }
+  }
+}

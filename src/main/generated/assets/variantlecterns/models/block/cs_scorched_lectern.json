@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/cs_scorched_lectern_base",
+    "bottom": "cinderscapes:block/scorched_planks",
+    "front": "variantlecterns:block/cs_scorched_lectern_front",
+    "particle": "variantlecterns:block/cs_scorched_lectern_sides",
+    "sides": "variantlecterns:block/cs_scorched_lectern_sides",
+    "top": "variantlecterns:block/cs_scorched_lectern_top"
+  }
+}

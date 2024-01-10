@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bm_blighted_balsa_lectern_base",
+    "bottom": "biomemakeover:block/blighted_balsa_planks",
+    "front": "variantlecterns:block/bm_blighted_balsa_lectern_front",
+    "particle": "variantlecterns:block/bm_blighted_balsa_lectern_sides",
+    "sides": "variantlecterns:block/bm_blighted_balsa_lectern_sides",
+    "top": "variantlecterns:block/bm_blighted_balsa_lectern_top"
+  }
+}
