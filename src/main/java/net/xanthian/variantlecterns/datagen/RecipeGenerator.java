@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.ItemConvertible;
@@ -19,14 +19,13 @@ import net.xanthian.variantlecterns.block.Vanilla;
 import net.xanthian.variantlecterns.block.compatability.*;
 
 import java.util.Map;
-import java.util.function.Consumer;
 
 public class RecipeGenerator extends FabricRecipeProvider {
     public RecipeGenerator(FabricDataOutput output) {
         super(output);
     }
 
-    public static void offerLecternRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible lectern, ItemConvertible slab) {
+    public static void offerLecternRecipe(RecipeExporter exporter, ItemConvertible lectern, ItemConvertible slab) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, lectern)
                 .input('B', Blocks.BOOKSHELF)
                 .input('S', slab)
@@ -37,7 +36,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void offerLecternWithBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible lectern, ItemConvertible bookshelf, ItemConvertible slab) {
+    public static void offerLecternWithBookshelfRecipe(RecipeExporter exporter, ItemConvertible lectern, ItemConvertible bookshelf, ItemConvertible slab) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, lectern)
                 .input('B', bookshelf)
                 .input('S', slab)
@@ -49,7 +48,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
         offerLecternWithBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("variantbookshelves")), Vanilla.ACACIA_LECTERN, Items.ACACIA_SLAB, Registries.ITEM.get(new Identifier("variantbookshelves", "acacia_bookshelf")));
         offerLecternWithBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("variantbookshelves")), Vanilla.BAMBOO_LECTERN, Items.BAMBOO_SLAB, Registries.ITEM.get(new Identifier("variantbookshelves", "bamboo_bookshelf")));
@@ -112,11 +111,11 @@ public class RecipeGenerator extends FabricRecipeProvider {
         registerLecternWithBookshelfRecipe(exporter, Vinery.LDV_LECTERNS, "vinery");
     }
 
-    public void registerLecternRecipe(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> lecterns, String modId) {
+    public void registerLecternRecipe(RecipeExporter exporter, Map<Identifier, Block> lecterns, String modId) {
         registerLecternRecipes(exporter, lecterns, modId);
     }
 
-    public void registerLecternRecipes(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> lecterns, String modId) {
+    public void registerLecternRecipes(RecipeExporter exporter, Map<Identifier, Block> lecterns, String modId) {
         for (Map.Entry<Identifier, Block> entry : lecterns.entrySet()) {
             Identifier lecternId = entry.getKey();
             Block lectern = entry.getValue();
@@ -130,11 +129,11 @@ public class RecipeGenerator extends FabricRecipeProvider {
         }
     }
 
-    public void registerLecternWithBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> lectern, String modId) {
+    public void registerLecternWithBookshelfRecipe(RecipeExporter exporter, Map<Identifier, Block> lectern, String modId) {
         registerLecternWithBookshelfRecipes(exporter, lectern, modId);
     }
 
-    public void registerLecternWithBookshelfRecipes(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> lecterns, String modId) {
+    public void registerLecternWithBookshelfRecipes(RecipeExporter exporter, Map<Identifier, Block> lecterns, String modId) {
         for (Map.Entry<Identifier, Block> entry : lecterns.entrySet()) {
             Identifier lecternId = entry.getKey();
             Block lectern = entry.getValue();
