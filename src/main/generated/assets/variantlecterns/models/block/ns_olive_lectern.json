@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/ns_olive_lectern_base",
+    "bottom": "natures_spirit:block/olive_planks",
+    "front": "variantlecterns:block/ns_olive_lectern_front",
+    "particle": "variantlecterns:block/ns_olive_lectern_sides",
+    "sides": "variantlecterns:block/ns_olive_lectern_sides",
+    "top": "variantlecterns:block/ns_olive_lectern_top"
+  }
+}

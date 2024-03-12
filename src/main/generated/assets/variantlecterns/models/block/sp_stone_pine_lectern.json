@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/sp_stone_pine_lectern_base",
+    "bottom": "snifferplus:block/stone_pine_planks",
+    "front": "variantlecterns:block/sp_stone_pine_lectern_front",
+    "particle": "variantlecterns:block/sp_stone_pine_lectern_sides",
+    "sides": "variantlecterns:block/sp_stone_pine_lectern_sides",
+    "top": "variantlecterns:block/sp_stone_pine_lectern_top"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bw_elder_lectern_base",
+    "bottom": "bewitchment:block/elder_planks",
+    "front": "variantlecterns:block/bw_elder_lectern_front",
+    "particle": "variantlecterns:block/bw_elder_lectern_sides",
+    "sides": "variantlecterns:block/bw_elder_lectern_sides",
+    "top": "variantlecterns:block/bw_elder_lectern_top"
+  }
+}

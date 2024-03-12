@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/ns_maple_lectern_base",
+    "bottom": "natures_spirit:block/maple_planks",
+    "front": "variantlecterns:block/ns_maple_lectern_front",
+    "particle": "variantlecterns:block/ns_maple_lectern_sides",
+    "sides": "variantlecterns:block/ns_maple_lectern_sides",
+    "top": "variantlecterns:block/ns_maple_lectern_top"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "variantlecterns:block/aa_strophar_lectern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "variantlecterns:block/aa_strophar_lectern"
+    },
+    "facing=south": {
+      "model": "variantlecterns:block/aa_strophar_lectern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "variantlecterns:block/aa_strophar_lectern",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/cs_umbral_lectern_base",
+    "bottom": "cinderscapes:block/umbral_planks",
+    "front": "variantlecterns:block/cs_umbral_lectern_front",
+    "particle": "variantlecterns:block/cs_umbral_lectern_sides",
+    "sides": "variantlecterns:block/cs_umbral_lectern_sides",
+    "top": "variantlecterns:block/cs_umbral_lectern_top"
+  }
+}

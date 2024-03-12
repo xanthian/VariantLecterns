@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/dark_oak_lectern_base",
+    "bottom": "minecraft:block/dark_oak_planks",
+    "front": "variantlecterns:block/dark_oak_lectern_front",
+    "particle": "variantlecterns:block/dark_oak_lectern_sides",
+    "sides": "variantlecterns:block/dark_oak_lectern_sides",
+    "top": "variantlecterns:block/dark_oak_lectern_top"
+  }
+}

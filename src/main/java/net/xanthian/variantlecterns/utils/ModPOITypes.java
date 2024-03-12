@@ -2,15 +2,13 @@ package net.xanthian.variantlecterns.utils;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.poi.PointOfInterestType;
 import net.minecraft.world.poi.PointOfInterestTypes;
-
-import net.xanthian.variantlecterns.block.Lecterns;
+import net.xanthian.variantlecterns.block.VariantLecternBlock;
 import net.xanthian.variantlecterns.mixin.PointOfInterestTypesAccessor;
 
 import java.util.ArrayList;
@@ -22,26 +20,20 @@ public class ModPOITypes {
 
         Map<BlockState, RegistryEntry<PointOfInterestType>> poiStatesToType = PointOfInterestTypesAccessor
                 .getPointOfInterestStatesToType();
-
         RegistryEntry<PointOfInterestType> clericEntry = Registries.POINT_OF_INTEREST_TYPE
-                .getEntry(PointOfInterestTypes.CLERIC).get();
+                .getEntry(PointOfInterestTypes.LIBRARIAN).get();
+        PointOfInterestType clericPoiType = Registries.POINT_OF_INTEREST_TYPE.get(PointOfInterestTypes.LIBRARIAN);
+        List<BlockState> clericBlockStates = new ArrayList<>(clericPoiType.blockStates);
 
-        PointOfInterestType clericPoiType = Registries.POINT_OF_INTEREST_TYPE.get(PointOfInterestTypes.CLERIC);
-
-        // NOTE: PointOfInterestType.blockStates is accessible by access widener
-        List<BlockState> clericBlockStates = new ArrayList<BlockState>(clericPoiType.blockStates);
-
-        for (Block block : Lecterns.MOD_LECTERNS.values()) {
-            ImmutableList<BlockState> blockStates = block.getStateManager().getStates();
-
-            for (BlockState blockState : blockStates) {
-                poiStatesToType.putIfAbsent(blockState, clericEntry);
+        for (Block block : Registries.BLOCK) { // Iterate through all blocks
+            if (block instanceof VariantLecternBlock lecternBlock) { // Check if the block is an instance of VariantLecternBlock
+                ImmutableList<BlockState> blockStates = lecternBlock.getStateManager().getStates();
+                for (BlockState blockState : blockStates) {
+                    poiStatesToType.putIfAbsent(blockState, clericEntry);
+                }
+                clericBlockStates.addAll(blockStates);
             }
-
-            clericBlockStates.addAll(blockStates);
+            clericPoiType.blockStates = ImmutableSet.copyOf(clericBlockStates);
         }
-
-        // NOTE: PointOfInterestType.blockStates is mutable by access widener
-        clericPoiType.blockStates = ImmutableSet.copyOf(clericBlockStates);
     }
 }

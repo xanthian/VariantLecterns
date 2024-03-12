@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/ru_cobalt_lectern_base",
+    "bottom": "regions_unexplored:block/cobalt_planks",
+    "front": "variantlecterns:block/ru_cobalt_lectern_front",
+    "particle": "variantlecterns:block/ru_cobalt_lectern_sides",
+    "sides": "variantlecterns:block/ru_cobalt_lectern_sides",
+    "top": "variantlecterns:block/ru_cobalt_lectern_top"
+  }
+}

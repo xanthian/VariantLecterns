@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/spruce_lectern_base",
+    "bottom": "minecraft:block/spruce_planks",
+    "front": "variantlecterns:block/spruce_lectern_front",
+    "particle": "variantlecterns:block/spruce_lectern_sides",
+    "sides": "variantlecterns:block/spruce_lectern_sides",
+    "top": "variantlecterns:block/spruce_lectern_top"
+  }
+}

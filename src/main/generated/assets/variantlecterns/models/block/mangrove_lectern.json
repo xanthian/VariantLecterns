@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/mangrove_lectern_base",
+    "bottom": "minecraft:block/mangrove_planks",
+    "front": "variantlecterns:block/mangrove_lectern_front",
+    "particle": "variantlecterns:block/mangrove_lectern_sides",
+    "sides": "variantlecterns:block/mangrove_lectern_sides",
+    "top": "variantlecterns:block/mangrove_lectern_top"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "variantlecterns:block/cs_scorched_lectern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "variantlecterns:block/cs_scorched_lectern"
+    },
+    "facing=south": {
+      "model": "variantlecterns:block/cs_scorched_lectern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "variantlecterns:block/cs_scorched_lectern",
+      "y": 270
+    }
+  }
+}

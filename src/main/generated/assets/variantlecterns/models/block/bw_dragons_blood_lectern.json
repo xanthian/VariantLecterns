@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bw_dragons_blood_lectern_base",
+    "bottom": "bewitchment:block/dragons_blood_planks",
+    "front": "variantlecterns:block/bw_dragons_blood_lectern_front",
+    "particle": "variantlecterns:block/bw_dragons_blood_lectern_sides",
+    "sides": "variantlecterns:block/bw_dragons_blood_lectern_sides",
+    "top": "variantlecterns:block/bw_dragons_blood_lectern_top"
+  }
+}

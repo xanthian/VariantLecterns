@@ -1,0 +1,11 @@
+{
+  "parent": "variantlecterns:block/variantlectern",
+  "textures": {
+    "base": "variantlecterns:block/bls_raw_bamboo_lectern_base",
+    "bottom": "blockus:block/raw_bamboo_planks",
+    "front": "variantlecterns:block/bls_raw_bamboo_lectern_front",
+    "particle": "variantlecterns:block/bls_raw_bamboo_lectern_sides",
+    "sides": "variantlecterns:block/bls_raw_bamboo_lectern_sides",
+    "top": "variantlecterns:block/bls_raw_bamboo_lectern_top"
+  }
+}
