@@ -18,5 +18,19 @@
     "fabric": "*",
     "minecraft": ["1.20.2","1.20.3", "1.20.4"],
     "java": ">=17"
+  },
+  "custom": {
+    "optigui:container_default_gui_textures": {
+      "variantlecterns:acacia_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:bamboo_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:birch_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:cherry_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:crimson_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:dark_oak_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:jungle_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:mangrove_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:spruce_lectern": "minecraft:textures/gui/book.png",
+      "variantlecterns:warped_lectern": "minecraft:textures/gui/book.png"
     }
+  }
 }
